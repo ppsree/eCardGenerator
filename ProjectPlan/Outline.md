@@ -27,5 +27,7 @@ Project Plan - only available for admin.
 Page that shows project plans and timelines.
 
 
+## Goal for Week 1 ##
+Setting up a MVP (Minimum Viable Product)
 
 
