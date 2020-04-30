@@ -1,6 +1,6 @@
 # Project Outline #
 
-## What ##
+## What is the project ##
 Web site that lets you create eCards from predefined templates and sends out an email requesting recipients to come see the eCard dedicated to them.
 
 ## Technologies used ##
