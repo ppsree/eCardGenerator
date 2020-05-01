@@ -8,12 +8,9 @@ import { CardPreviewComponent } from 'src/app/card-preview/card-preview.componen
 
 
 const routes: Routes = [
-  {path: "" ,redirectTo: "home", pathMatch:"full" },
-  {path: "home", component: HomeComponent},
+  {path: "" ,component: HomeComponent },
   {path: "about", component: AboutComponent},
   {path: "cards", component: CardsComponent}
-  // {path: "cards/id", component: CardDetailComponent},
-  // {path: "cards/id/preview", component: CardPreviewComponent}
 ];
 
 @NgModule({
