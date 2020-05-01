@@ -1,0 +1,21 @@
+h2 {
+    font-family: "Lobster";
+    font-size: 4em;
+    color: #673ab7;
+    padding-top: 1em;
+}
+h3 {
+    margin-top: 1em;
+    padding-left: 2em;
+    padding-right: 2em;
+    font-family: "Lobster";
+    letter-spacing: 2px;
+    color: white;
+}
+h6 {
+    padding-bottom: 3em;
+}
+.home {
+    background-size: cover;
+    background-color: rgb(233, 196, 33);
+}
