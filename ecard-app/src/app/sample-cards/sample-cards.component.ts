@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SampleCardsComponent implements OnInit {
   public src: string;
-  public greetings: string[];
+  public greetings: any[];
   
   constructor() { }
 
