@@ -1,0 +1,17 @@
+<mat-grid-list cols="2" rowHeight="1.5:1.9">
+    <mat-grid-tile>
+        <img class="img-responsive" src={{greetings[0].image}}/>
+    </mat-grid-tile>
+    <mat-grid-tile>
+        <app-sample-card-summary title={{greetings[0].title}} summary={{greetings[0].summary}}></app-sample-card-summary>
+    </mat-grid-tile>
+</mat-grid-list>
+<mat-grid-list cols="2" rowHeight="1.3:1">
+    <mat-grid-tile>
+        <app-sample-card-summary title={{greetings[1].title}} summary={{greetings[1].summary}}></app-sample-card-summary>
+
+    </mat-grid-tile>
+    <mat-grid-tile>
+        <img class="img-responsive" src={{greetings[1].image}}/>
+    </mat-grid-tile>
+</mat-grid-list>
