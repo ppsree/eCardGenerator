@@ -1,0 +1,88 @@
+{
+    "plan": [
+        {
+            "id": "1",
+            "step": "Basic App on Git with routing",
+            "status": "",
+            "completion": "",
+            "substeps": [
+                {  
+                    "id": "1.1",
+                    "description": "Create and upload empty ng app to Git",
+                    "status": "done",
+                    "completion": "30-04-2020"
+                },
+                {
+                    "id": "1.2",
+                    "description": "Add routing for home, cards",
+                    "status": "done",
+                    "completion": "30-04-2020"
+                },
+                {
+                    "id": "1.3",
+                    "description": "Add angular material",
+                    "status": "done",
+                    "completion": "30-04-2020"
+                }
+            ]
+        },
+        {
+            "id": "2",
+            "step": "Setup Mongo DB, Node and Express with required APIs",
+            "status": "",
+            "completion": "",
+            "substeps": [
+            ]
+        },
+        {
+            "id": "3",
+            "step": "Setup Python for sending mails",
+            "status": "",
+            "completion": "",
+            "substeps": [
+            ]
+        },
+        {
+            "id": "4",
+            "step": "Create the Home Page",
+            "status": "",
+            "completion": "",
+            "substeps": [
+                {
+                    "id": "3.1",
+                    "description":"Create Menu that routes to different pages",
+                    "status": "",
+                    "completion": ""
+                },
+                {
+                    "id": "3.2",
+                    "description":"Create banner with background image and Get Started Button",
+                    "status": "",
+                    "completion": ""
+                },
+                {
+                    "id": "3.3",
+                    "description":"Create Contact Page section at the end",
+                    "status": "",
+                    "completion": ""
+                }
+            ]
+        },
+        {
+            "id": "5",
+            "step": "Create component for displaying cards",
+            "status": "",
+            "completion": "",
+            "substeps": [
+            ]
+        },
+        {
+            "id": "6",
+            "step": "Create component for displaying email templates",
+            "status": "",
+            "completion": "",
+            "substeps": [
+            ]
+        }
+    ]
+}
