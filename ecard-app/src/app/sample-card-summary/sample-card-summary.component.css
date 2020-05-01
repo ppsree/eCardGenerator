@@ -1,0 +1,18 @@
+p {
+    color: grey;
+    font-style: italic;
+    text-align: "justify";
+}
+
+h2 {
+    font-family: "Lobster";
+    text-decoration: underline;
+}
+
+.greeting {
+    padding-left: 4em;
+    padding-right: 3em;
+    background-color: rgb(245, 233, 131);
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
