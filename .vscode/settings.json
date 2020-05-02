@@ -1,0 +1,3 @@
+{
+    "typescript.tsdk": "./ecard-app/node_modules/typescript/lib",
+}
