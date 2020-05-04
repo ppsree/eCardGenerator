@@ -9,6 +9,9 @@ import { MatCardModule } from '@angular/material/card';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatIconModule } from '@angular/material/icon';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
+import { MatChipsModule } from '@angular/material/chips';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HomeComponent } from './home/home.component';
 import { MenuComponent } from './menu/menu.component';
@@ -21,6 +24,10 @@ import { CardSummaryComponent } from './card-summary/card-summary.component';
 import { SampleCardsComponent } from './sample-cards/sample-cards.component';
 import { SampleCardSummaryComponent } from './sample-card-summary/sample-card-summary.component';
 import { ContactComponent } from './contact/contact.component';
+import { CardMessageComponent } from './card-message/card-message.component';
+import { CardGreetingComponent } from './card-greeting/card-greeting.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -36,7 +43,9 @@ import { ContactComponent } from './contact/contact.component';
     CardSummaryComponent,
     SampleCardsComponent,
     SampleCardSummaryComponent,
-    ContactComponent
+    ContactComponent,
+    CardMessageComponent,
+    CardGreetingComponent
   ],
   imports: [
     BrowserModule,
@@ -46,7 +55,13 @@ import { ContactComponent } from './contact/contact.component';
     MatCardModule,
     MatGridListModule,
     MatToolbarModule,
-    MatIconModule
+    MatIconModule,
+    MatFormFieldModule,
+    MatInputModule,
+    MatChipsModule,
+    FormsModule,
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
