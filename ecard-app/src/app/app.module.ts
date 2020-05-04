@@ -24,8 +24,6 @@ import { CardSummaryComponent } from './card-summary/card-summary.component';
 import { SampleCardsComponent } from './sample-cards/sample-cards.component';
 import { SampleCardSummaryComponent } from './sample-card-summary/sample-card-summary.component';
 import { ContactComponent } from './contact/contact.component';
-import { CardMessageComponent } from './card-message/card-message.component';
-import { CardGreetingComponent } from './card-greeting/card-greeting.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 
@@ -43,9 +41,7 @@ import { HttpClientModule } from '@angular/common/http';
     CardSummaryComponent,
     SampleCardsComponent,
     SampleCardSummaryComponent,
-    ContactComponent,
-    CardMessageComponent,
-    CardGreetingComponent
+    ContactComponent
   ],
   imports: [
     BrowserModule,

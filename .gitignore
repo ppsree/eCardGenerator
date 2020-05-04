@@ -1,1 +1,8 @@
 DetailedPlan.md
+.firebase
+.now
+dist/*
+.firebaserc
+firebase.json
+src/assets/plan
+PendingChanges.txt
