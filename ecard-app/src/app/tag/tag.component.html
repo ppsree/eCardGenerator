@@ -1,1 +1,5 @@
-<p>tag works!</p>
+<div class="tags"><mat-chip-list>
+    <mat-chip *ngFor="let tag of tags" (click)="filterCards(tag)">
+        {{tag}}
+    </mat-chip>
+</mat-chip-list></div>
