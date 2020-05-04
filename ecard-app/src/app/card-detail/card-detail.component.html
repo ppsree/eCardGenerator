@@ -1,1 +1,68 @@
-<p>card-detail works!</p>
+<app-menu></app-menu>
+<mat-grid-list cols="2" rowHeight="1:1">
+    <mat-grid-tile>
+        <div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+            <div class="flipper">
+                <div class="front">
+                    <!-- <img src="https://img.freepik.com/free-vector/hand-drawn-christmas-tree-branches-background_52683-29748.jpg?size=626&ext=jpg"
+                            /> -->
+                    <img src="{{card.image}}" width="500" height="500" />
+                </div>
+                <div class="back">
+                    <div class="salutation">Dear {{to.value}},</div>
+                    <br />
+                    <!-- <div *ngIf="cardForm.message == ''" class="text-center message">{{card.message}}</div>
+                    <br /> -->
+                    <div class="text-center message">{{message.value}}</div>
+                    <br />
+                    <!-- <div *ngIf="cardForm.greeting == ''" class='text-center greeting'>{{card.greeting}}</div>
+                    <br /> -->
+                    <div class='text-center greeting'>{{greeting.value}}</div>
+                    <br />
+                    <div class="right">Love, {{from.value}}</div>
+                </div>
+            </div>
+        </div>
+    </mat-grid-tile>
+    <mat-grid-tile>
+        <form class="card-form">
+            <mat-form-field class="full-width">
+                <mat-label>To Name</mat-label>
+                <input matInput name="to" [formControl]="to"/>
+            </mat-form-field>
+            <br />
+            <mat-form-field class="full-width">
+                <mat-label>From Name</mat-label>
+                <input matInput name="from" [formControl]="from"/>
+            </mat-form-field>
+            <br />
+            <div *ngIf="editBtnClicked == false">
+                <button mat-flat-button color="primary" (click)="editMessage()">Edit Message on Card</button>
+                <br />
+            </div>
+
+
+            <div *ngIf="editBtnClicked">
+                <mat-form-field class="full-width">
+                    <mat-label>Message</mat-label>
+                    <textarea matInput name="message" [formControl]="message"></textarea>
+                </mat-form-field>
+                <br />
+                <mat-form-field class="full-width">
+                    <mat-label>Greeting</mat-label>
+                    <textarea matInput name="greeting" [formControl]="greeting"></textarea>
+                </mat-form-field>
+                <br />
+                <button mat-flat-button color="primary" (click)="reset()">Reset</button>
+            </div>
+            <mat-form-field class="full-width">
+                <mat-label>To Email</mat-label>
+                <input matInput #toemail name="toemail"/>
+            </mat-form-field>
+            <br />
+            <button mat-flat-button color="primary">Preview</button>
+            <span class="spacer"></span>
+            <button mat-flat-button color="primary">Send</button>
+        </form>
+    </mat-grid-tile>
+</mat-grid-list>

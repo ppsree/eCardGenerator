@@ -1,0 +1,80 @@
+.card-form {
+    min-width: 150px;
+    max-width: 500px;
+    width: 100%;
+  }
+  
+  .full-width {
+    width: 100%;
+  }
+
+.spacer {
+    margin-left: .5em;
+    padding-left: 1em;
+}
+
+.right {
+    float: right;
+}
+
+/* Flip card Animation Start */
+
+/* entire container, keeps perspective */
+.flip-container {
+	perspective: 1000px;
+}
+	/* flip the pane when hovered */
+	.flip-container:hover .flipper, .flip-container.hover .flipper {
+		transform: rotateY(180deg);
+	}
+
+.flip-container, .front, .back {
+	width: 600px;
+    height: 400px;
+    /* margin-left: -5em; */
+}
+
+/* flip speed goes here */
+.flipper {
+	transition: 1s;
+	transform-style: preserve-3d;
+    position: relative;
+    
+}
+
+/* hide back of pane during swap */
+.front, .back {
+	backface-visibility: hidden;
+
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+/* front pane, placed above back */
+.front {
+	z-index: 2;
+	/* for firefox 31 */
+	transform: rotateY(0deg);
+}
+
+/* back, initially hidden pane */
+.back {
+    transform: rotateY(180deg);
+    border: 10px solid rgb(175, 175, 175);
+    font-family: 'Lobster';
+    font-style: italic;
+    letter-spacing: 1px;
+    font-size: 22px;
+    color: rgb(158, 29, 29);
+}
+
+/* Flip card Animation end */
+
+.message {
+    font-size: 25px;
+}
+
+.greeting {
+    font-size: 36px;
+}
