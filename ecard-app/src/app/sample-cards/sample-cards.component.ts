@@ -22,7 +22,7 @@ export class SampleCardsComponent implements OnInit {
       {
         "title": "Birthday Wishes",
         "summary": "Never miss another birthday. Surprise your loved ones with these awesome Birthday and Anniversary cards. Browse through our seasonal greeting cards collection to know more.",
-        "image": "https://www.desktopbackground.org/p/2012/04/13/373948_happy-birthday-cake-wallpapers_1024x768_h.jpg"
+        "image": "https://thumbs.dreamstime.com/b/pink-donut-one-burning-candle-against-bokeh-light-background-happy-birthday-concept-pink-donut-one-burning-candle-against-157414932.jpg"
       }
     ];
   }
