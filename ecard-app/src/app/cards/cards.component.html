@@ -1,2 +1,20 @@
 <app-menu></app-menu>
-<h1>Cards Page</h1>
+<app-tag [tags]="tags" (filterSelected)="filterCards($event)"></app-tag>
+<mat-grid-list cols="5" rowHeight="1:1">
+    <mat-grid-tile *ngFor="let card of cards">
+        <mat-card>
+            <img src="{{card.image}}" width="150px" height="150px">
+            <mat-card-content>
+                <p>{{card.summary}}</p>
+            </mat-card-content>
+            <mat-card-actions>
+                <button mat-button (click)="navigateTo(card.id)">VIEW</button>
+            </mat-card-actions>
+        </mat-card>
+    </mat-grid-tile>
+</mat-grid-list>
+
+
+<!-- <app-card-detail></app-card-detail> -->
+
+<!-- <h1>Cards Page</h1> -->
