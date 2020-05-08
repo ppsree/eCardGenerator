@@ -12,6 +12,8 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { MatChipsModule } from '@angular/material/chips';
+import { MatDialogModule} from '@angular/material/dialog';
+import { MatTabsModule } from '@angular/material/tabs';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HomeComponent } from './home/home.component';
 import { MenuComponent } from './menu/menu.component';
@@ -26,6 +28,7 @@ import { SampleCardSummaryComponent } from './sample-card-summary/sample-card-su
 import { ContactComponent } from './contact/contact.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { ModalComponent } from './modal/modal.component';
 
 @NgModule({
   declarations: [
@@ -41,7 +44,8 @@ import { HttpClientModule } from '@angular/common/http';
     CardSummaryComponent,
     SampleCardsComponent,
     SampleCardSummaryComponent,
-    ContactComponent
+    ContactComponent,
+    ModalComponent
   ],
   imports: [
     BrowserModule,
@@ -55,11 +59,14 @@ import { HttpClientModule } from '@angular/common/http';
     MatFormFieldModule,
     MatInputModule,
     MatChipsModule,
+    MatDialogModule,
+    MatTabsModule,
     FormsModule,
     ReactiveFormsModule,
     HttpClientModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  entryComponents: [ModalComponent]
 })
 export class AppModule { }
