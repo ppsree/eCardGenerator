@@ -10,6 +10,7 @@ import { CardsService } from '../cards.service';
 export class CardsComponent implements OnInit {
 
   public cards: any;
+  public fullCards: any;
   public tags: Array<string> = [];
   constructor(private router: Router,
     private cardsService: CardsService) { }
@@ -18,6 +19,7 @@ export class CardsComponent implements OnInit {
     this.cardsService.getCards().subscribe(
       res => {
         this.cards = res;
+        this.fullCards = res;
         for (let card of this.cards) {
           if (this.tags.indexOf(card.tags) == -1) {
             this.tags.push(card.tags);
@@ -33,11 +35,23 @@ export class CardsComponent implements OnInit {
   }
 
   filterCards(event) {
-    console.log(event);
-    for (let card in this.cards) {
-      if (card["tags"] != event) {
-        
+    /*  
+    * Here event represents the JSON data of all 
+    * tags and their respective values
+    */
+
+    let cards = [];
+    this.cards = this.fullCards;
+
+    for (let card of this.cards) {
+      if (event[card.tags] == 'true') {
+        cards.push(card);
       }
+    }
+    if (cards.length == 0) {
+      this.cards = this.fullCards;
+    } else {
+      this.cards = cards;
     }
   }
 
