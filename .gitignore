@@ -6,3 +6,4 @@ dist/*
 firebase.json
 src/assets/plan
 PendingChanges.txt
+credentials.json
