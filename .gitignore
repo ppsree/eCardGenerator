@@ -7,3 +7,5 @@ firebase.json
 src/assets/plan
 PendingChanges.txt
 credentials.json
+Phase1_Changes.md
+src/mailer/*
