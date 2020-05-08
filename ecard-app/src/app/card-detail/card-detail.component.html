@@ -60,9 +60,9 @@
                 <input matInput #toemail name="toemail"/>
             </mat-form-field>
             <br />
-            <button mat-flat-button color="primary">Preview</button>
-            <span class="spacer"></span>
-            <button mat-flat-button color="primary">Send</button>
+            <!-- <button mat-flat-button color="primary">Preview</button>
+            <span class="spacer"></span> -->
+            <button mat-flat-button color="primary" (click)="showMessage()">Send</button>
         </form>
     </mat-grid-tile>
 </mat-grid-list>

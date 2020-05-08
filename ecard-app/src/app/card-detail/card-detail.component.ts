@@ -6,6 +6,8 @@ import { Card } from '../../model/card';
 import { GreetingCard } from '../../model/greetingcard';
 // import { NgForm, NgModel, FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { FormControl } from '@angular/forms';
+import { MatDialog, MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
+import { ModalComponent } from '../modal/modal.component';
 
 @Component({
   selector: 'app-card-detail',
@@ -32,7 +34,7 @@ export class CardDetailComponent implements OnInit {
   public cards: any;
   public card: Card = new Card();
 
-  constructor(private route: ActivatedRoute, private cardsService: CardsService) { 
+  constructor(private route: ActivatedRoute, private cardsService: CardsService, public dialog: MatDialog) { 
   }
 
   ngDoCheck() {
@@ -74,13 +76,15 @@ export class CardDetailComponent implements OnInit {
     this.setCardProperties();
   }
 
-  public setCardProperties(){
-    // this.cardForm.patchValue({
-    //   greeting: this.card.greeting,
-    //   message: this.card.message
-    // });    
+  public setCardProperties(){   
     this.greeting.setValue(this.card.greeting);
     this.message.setValue(this.card.message);
   }
 
+  showMessage(): void {
+    const dialogRef = this.dialog.open(ModalComponent, {
+      width: '250px',
+      data: {title: "Alert!", message: "This functionality is under development right now."}
+    });
+  }
 }
